@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verifone UK Support — Contact Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --vf-blue: #0066FF;
+    --vf-blue-hover: #0052CC;
+    --vf-dark: #1A1F36;
+    --vf-text: #3C4257;
+    --vf-text-light: #6B7294;
+    --vf-border: #D6DCE8;
+    --vf-bg: #F7F8FB;
+    --vf-white: #FFFFFF;
+    --vf-red: #E25950;
+    --vf-green: #28A745;
+    --vf-radius: 8px;
+    --vf-shadow: 0 1px 3px rgba(26,31,54,0.08), 0 4px 14px rgba(26,31,54,0.04);
+    --vf-shadow-lg: 0 4px 24px rgba(26,31,54,0.10);
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--vf-bg);
+    color: var(--vf-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--vf-white);
+    border-bottom: 1px solid var(--vf-border);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  .header svg { flex-shrink: 0; }
+  .header-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vf-text-light);
+    letter-spacing: 0.02em;
+  }
+
+  /* ── Main container ── */
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+
+  .page-title {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .page-title h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--vf-dark);
+    letter-spacing: -0.02em;
+  }
+  .page-subtitle {
+    text-align: center;
+    color: var(--vf-text-light);
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--vf-white);
+    border-radius: 12px;
+    box-shadow: var(--vf-shadow);
+    overflow: hidden;
+  }
+  .card-header {
+    background: #6EFFD2;
+    color: var(--vf-dark);
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .card-header-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--vf-dark);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .card-header-icon svg { width: 20px; height: 20px; }
+  .card-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .card-header p {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 2px;
+  }
+
+  .card-body { padding: 28px; }
+
+  /* ── Form fields ── */
+  .field-group {
+    margin-bottom: 22px;
+  }
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 520px) {
+    .field-row { grid-template-columns: 1fr; }
+  }
+
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--vf-dark);
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+  }
+  label .req {
+    color: var(--vf-red);
+    margin-left: 2px;
+  }
+  label .hint {
+    font-weight: 400;
+    color: var(--vf-text-light);
+    font-size: 12px;
+    margin-left: 4px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--vf-border);
+    border-radius: var(--vf-radius);
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--vf-text);
+    background: var(--vf-white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--vf-blue);
+    box-shadow: 0 0 0 3px rgba(0,102,255,0.12);
+  }
+  input::placeholder, textarea::placeholder {
+    color: #A3ACBE;
+  }
+  select { cursor: pointer; appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%236B7294' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 38px;
+  }
+  textarea { resize: vertical; min-height: 120px; }
+
+  .char-count {
+    text-align: right;
+    font-size: 12px;
+    color: var(--vf-text-light);
+    margin-top: 4px;
+  }
+  .char-count.over { color: var(--vf-red); font-weight: 600; }
+
+  /* ── File upload ── */
+  .file-upload-area {
+    border: 2px dashed var(--vf-border);
+    border-radius: var(--vf-radius);
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .file-upload-area:hover, .file-upload-area.dragover {
+    border-color: var(--vf-blue);
+    background: rgba(0,102,255,0.03);
+  }
+  .file-upload-area input { display: none; }
+  .file-upload-area svg { margin-bottom: 8px; }
+  .file-upload-area p { font-size: 14px; color: var(--vf-text-light); }
+  .file-upload-area p span { color: var(--vf-blue); font-weight: 600; cursor: pointer; }
+  .file-upload-area .file-hint { font-size: 12px; color: #A3ACBE; margin-top: 4px; }
+
+  .file-list { margin-top: 10px; }
+  .file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: var(--vf-bg);
+    border-radius: 6px;
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+  .file-item .file-name { color: var(--vf-dark); font-weight: 500; }
+  .file-item .file-size { color: var(--vf-text-light); margin-left: 8px; }
+  .file-item .remove-file {
+    background: none; border: none; cursor: pointer;
+    color: var(--vf-red); font-size: 18px; line-height: 1; padding: 0 4px;
+  }
+
+  /* ── Buttons ── */
+  .postcode-row {
+    display: flex;
+    gap: 10px;
+  }
+  .postcode-row input { flex: 1; }
+  .btn-lookup {
+    padding: 10px 20px;
+    border-radius: var(--vf-radius);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid var(--vf-blue);
+    background: var(--vf-white);
+    color: var(--vf-blue);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .btn-lookup:hover { background: var(--vf-blue); color: var(--vf-white); }
+  .btn-lookup.searching {
+    pointer-events: none; opacity: 0.6;
+  }
+  .form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--vf-border);
+  }
+  .btn {
+    padding: 12px 28px;
+    border-radius: var(--vf-radius);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary {
+    background: #6EFFD2;
+    color: var(--vf-dark);
+    flex: 1;
+  }
+  .btn-primary:hover { background: #55e6ba; box-shadow: var(--vf-shadow-lg); }
+  .btn-primary:active { transform: scale(0.98); }
+  .btn-secondary {
+    background: var(--vf-bg);
+    color: var(--vf-text);
+    border: 1.5px solid var(--vf-border);
+  }
+  .btn-secondary:hover { background: #EBEEF5; }
+
+  /* ── Validation ── */
+  .field-group.error input,
+  .field-group.error select,
+  .field-group.error textarea {
+    border-color: var(--vf-red);
+  }
+  .error-msg {
+    font-size: 12px;
+    color: var(--vf-red);
+    margin-top: 4px;
+    display: none;
+  }
+  .field-group.error .error-msg { display: block; }
+
+  /* ── Success state ── */
+  .call-us-section {
+    text-align: center;
+    padding: 20px 28px 0;
+    border-top: 1px solid var(--vf-border);
+    margin-top: 24px;
+  }
+  .call-us-section > p {
+    font-size: 14px;
+    color: var(--vf-text-light);
+  }
+  .call-us-section a {
+    color: var(--vf-blue);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .call-us-section a:hover { text-decoration: underline; }
+  .call-us-info {
+    margin-top: 12px;
+    padding: 16px;
+    background: var(--vf-bg);
+    border-radius: var(--vf-radius);
+  }
+  .call-us-info .call-number {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--vf-dark);
+    letter-spacing: 0.02em;
+  }
+  .call-us-info .call-hint {
+    font-size: 13px;
+    color: var(--vf-text-light);
+    margin-top: 4px;
+  }
+
+  .success-message {
+    display: none;
+    text-align: center;
+    padding: 60px 28px;
+  }
+  .success-message.show { display: block; }
+  .success-message svg { margin-bottom: 16px; }
+  .success-message h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--vf-dark);
+    margin-bottom: 8px;
+  }
+  .success-message p {
+    color: var(--vf-text-light);
+    font-size: 15px;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  /* ── Loading spinner ── */
+  .btn-primary.loading {
+    pointer-events: none;
+    opacity: 0.8;
+    position: relative;
+  }
+  .btn-primary.loading::after {
+    content: '';
+    width: 18px; height: 18px;
+    border: 2px solid rgba(26,31,54,0.2);
+    border-top-color: var(--vf-dark);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Fade-in ── */
+  .card { animation: fadeUp 0.4s ease-out; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .version-footer {
+    text-align: center;
+    padding: 16px 0 32px;
+    font-size: 11px;
+    color: #A3ACBE;
+    letter-spacing: 0.03em;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <img src="data:image/jpeg;base64,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ZeSTknOeb/JBGrjr2wrNKbmz6zoaZxseopO2dIxvswVePtjHHwLyDIM9+XfklerhZ4mBtxZm6P1hR1Vdp6NznUU9K0OmpC52XNLSQHRkku78gk9+QBO/VWn7LqmwVdh1DboLjbatnJNTzDLXDvB8wQcEEYIIBCiBuTwUVZrZarb7U9N6s9xc2iuwc0xjybKxrubyGWj3koOwXDiv2SpreamHUlZWygZ9WgtlQJD7svY1n+pQ9383+1VuRq9tfaqy46fs9IwxUVHTVbmOwT1fIWEBz3YHuAAAz1J2Km4PN4JanspG6fp2Z+6yXAlv+lhP+S7dszwfad03cILzry5R6kq4XB8dBFGWUbXD8vm9qXr4ENHmCgzfAxpTVNu0DVau1dc7tU1N9cw0VPW1L5OypmZ5ZAHHoXlxP0Q0+KkSvjWta0NaA1oGAAMABfUBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB//9k=" alt="Verifone" style="height:32px;">
+  <span class="header-text">UK Support</span>
+</div>
+
+<!-- Main -->
+<div class="container">
+  <div class="page-title">
+    <h1>Support By Email</h1>
+  </div>
+  <p class="page-subtitle">E-mail us if you need help with your devices or services</p>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-header-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+      </div>
+      <div>
+        <h2>Email Support for UK</h2>
+        <p>All fields marked with * are required</p>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <form id="supportForm" novalidate>
+
+        <!-- Contact Reason -->
+        <div class="field-group" id="fg-department">
+          <label for="department">Contact Reason<span class="req">*</span></label>
+          <select id="department" required>
+            <option value="">Select one</option>
+            <option value="Technical Assistance">Technical Assistance</option>
+            <option value="Setup Assistance">Setup Assistance</option>
+            <option value="Transaction Query">Transaction Query</option>
+            <option value="Hardware Fault">Hardware Fault</option>
+            <option value="Ecommerce">Ecommerce</option>
+          </select>
+          <p class="error-msg">Please select a contact reason</p>
+        </div>
+
+        <!-- Name row -->
+        <div class="field-row">
+          <div class="field-group" id="fg-firstName">
+            <label for="firstName">First Name<span class="req">*</span></label>
+            <input type="text" id="firstName" placeholder="Enter your First Name..." required>
+            <p class="error-msg">First name is required</p>
+          </div>
+          <div class="field-group" id="fg-lastName">
+            <label for="lastName">Last Name<span class="req">*</span></label>
+            <input type="text" id="lastName" placeholder="Enter your Last Name..." required>
+            <p class="error-msg">Last name is required</p>
+          </div>
+        </div>
+
+        <!-- Phone / Email row -->
+        <div class="field-row">
+          <div class="field-group" id="fg-phone">
+            <label for="phone">Phone Number<span class="req">*</span></label>
+            <input type="tel" id="phone" placeholder="Enter your Phone Number..." required>
+            <p class="error-msg">Phone number is required</p>
+          </div>
+          <div class="field-group" id="fg-email">
+            <label for="email">Email Address<span class="req">*</span></label>
+            <input type="email" id="email" placeholder="example@domain.com" required>
+            <p class="error-msg">Valid email address is required</p>
+          </div>
+        </div>
+
+        <!-- Serial Number & PTID (hidden for Ecommerce) -->
+        <div id="serialPtidGroup">
+          <div class="field-group" id="fg-serial">
+            <label for="serial">Serial Number<span class="req">*</span> <span class="hint">Format: XXX-XXX-XXX</span></label>
+            <input type="text" id="serial" inputmode="numeric" placeholder="XXX-XXX-XXX" maxlength="11" required>
+            <p class="error-msg">Please enter a valid serial number in XXX-XXX-XXX format</p>
+          </div>
+
+          <div class="field-group">
+            <label for="ptid">PTID <span class="hint">(optional — 8 digits)</span></label>
+            <input type="text" id="ptid" inputmode="numeric" placeholder="Enter 8-digit PTID..." maxlength="8">
+          </div>
+        </div>
+
+        <!-- Hardware Fault Fields (shown dynamically) -->
+        <div id="hardwareFaultFields" style="display:none;">
+          <div class="field-group" id="fg-postcode">
+            <label for="postcode">Post Code<span class="req">*</span></label>
+            <div class="postcode-row">
+              <input type="text" id="postcode" placeholder="e.g. TN24 0GP" required onkeydown="if(event.key==='Enter'){event.preventDefault();findAddress();}">
+              <button type="button" class="btn btn-lookup" id="lookupBtn" onclick="findAddress()">Find Address</button>
+            </div>
+            <p class="error-msg">Post code is required</p>
+          </div>
+          <div class="field-group" id="addressSelectGroup" style="display:none;">
+            <label for="addressList">Select Address</label>
+            <select id="addressList" onchange="fillAddress()"></select>
+          </div>
+          <div id="addressFieldsGroup" style="display:none;">
+            <div class="field-group" id="fg-line1">
+              <label for="line1">Address Line 1<span class="req">*</span></label>
+              <input type="text" id="line1" placeholder="Address line 1..." required>
+              <p class="error-msg">Address line 1 is required</p>
+            </div>
+            <div class="field-group" id="fg-line2">
+              <label for="line2">Address Line 2 <span class="hint">(optional)</span></label>
+              <input type="text" id="line2" placeholder="Address line 2...">
+            </div>
+            <div class="field-row">
+              <div class="field-group" id="fg-town">
+                <label for="town">Town / City<span class="req">*</span></label>
+                <input type="text" id="town" placeholder="Town or city..." required>
+                <p class="error-msg">Town is required</p>
+              </div>
+              <div class="field-group" id="fg-county">
+                <label for="county">County</label>
+                <input type="text" id="county" placeholder="County...">
+              </div>
+            </div>
+            <div class="field-group" id="fg-postcodeResult">
+              <label for="postcodeResult">Post Code</label>
+              <input type="text" id="postcodeResult" readonly>
+            </div>
+          </div>
+          <div id="addressLookupError" style="display:none; color:var(--vf-red); font-size:13px; margin-top:6px;"></div>
+        </div>
+
+        <!-- Existing Case Id (hidden for Hardware Fault) -->
+        <div class="field-group" id="caseIdGroup">
+          <label for="caseId">Existing Case ID <span class="hint">(optional)</span></label>
+          <input type="text" id="caseId" placeholder="Enter the previously opened Case ID if you have one...">
+        </div>
+
+        <!-- Transaction Query Fields (shown dynamically) -->
+        <div id="transactionFields" style="display:none;">
+          <div class="field-row">
+            <div class="field-group" id="fg-txAmount">
+              <label for="txAmount">Transaction Amount<span class="req">*</span></label>
+              <input type="text" id="txAmount" inputmode="decimal" placeholder="e.g. 49.99" required>
+              <p class="error-msg">Transaction amount is required</p>
+            </div>
+            <div class="field-group" id="fg-txCard">
+              <label for="txCard">Last 4 Digits of Card<span class="req">*</span></label>
+              <input type="text" id="txCard" inputmode="numeric" placeholder="e.g. 1234" maxlength="4" required>
+              <p class="error-msg">Please enter the last 4 digits of the card</p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-group" id="fg-txDate">
+              <label for="txDate">Date Transaction was Taken<span class="req">*</span></label>
+              <input type="date" id="txDate" required>
+              <p class="error-msg">Transaction date is required</p>
+            </div>
+            <div class="field-group" id="fg-txTime">
+              <label for="txTime">Time Transaction was Taken<span class="req">*</span></label>
+              <input type="time" id="txTime" required>
+              <p class="error-msg">Transaction time is required</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ecommerce Fields (shown dynamically) -->
+        <div id="ecommerceFields" style="display:none;">
+          <div class="field-group" id="fg-endpointUrl">
+            <label for="endpointUrl">Endpoint URL<span class="req">*</span></label>
+            <input type="text" id="endpointUrl" placeholder="e.g. https://api.example.com/endpoint" required>
+            <p class="error-msg">Endpoint URL is required</p>
+          </div>
+          <div class="field-group" id="fg-apiPost">
+            <label for="apiPost">API Post<span class="req">*</span></label>
+            <textarea id="apiPost" rows="4" placeholder="Paste the API post request body..." required></textarea>
+            <p class="error-msg">API Post is required</p>
+          </div>
+          <div class="field-group" id="fg-apiResponse">
+            <label for="apiResponse">API Response<span class="req">*</span></label>
+            <textarea id="apiResponse" rows="4" placeholder="Paste the API response received..." required></textarea>
+            <p class="error-msg">API Response is required</p>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="field-group" id="fg-description">
+          <label for="description">Detailed Description<span class="req">*</span></label>
+          <textarea id="description" placeholder="Please describe your issue in detail. Include any error messages displayed on the terminal or system..." maxlength="10000" required></textarea>
+          <div class="char-count"><span id="charCount">0</span> / 10,000</div>
+          <p class="error-msg">Please provide a description of the issue</p>
+        </div>
+
+        <!-- File upload -->
+        <div class="field-group">
+          <label>Upload Attachment <span class="hint">(optional)</span></label>
+          <div class="file-upload-area" id="dropZone">
+            <input type="file" id="fileInput" multiple>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A3ACBE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            <p><span>Upload Files</span> or drop files here</p>
+            <p class="file-hint">Max 10 MB per file</p>
+          </div>
+          <div class="file-list" id="fileList"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+          <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+        </div>
+      </form>
+
+      <!-- Call Us -->
+      <div class="call-us-section">
+        <p>Need to call us? <a href="javascript:void(0)" id="callUsToggle">Click here</a></p>
+        <div class="call-us-info" id="callUsInfo" style="display:none;">
+          <p class="call-number">0333 323 6677</p>
+          <p class="call-hint">Please select option 3 for technical support</p>
+        </div>
+      </div>
+
+      <!-- Success -->
+      <div class="success-message" id="successMsg">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="28" fill="#E8F5E9"/>
+          <circle cx="28" cy="28" r="20" fill="#28A745"/>
+          <path d="M20 28l5.5 5.5L36 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Request Submitted</h3>
+        <p>Your support request has been sent to our UK helpdesk team. We'll get back to you as soon as possible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="version-footer">v1.0.0</div>
+
+<script>
+const departmentEl   = document.getElementById('department');
+const form           = document.getElementById('supportForm');
+const submitBtn      = document.getElementById('submitBtn');
+const resetBtn       = document.getElementById('resetBtn');
+const successMsg     = document.getElementById('successMsg');
+const descriptionEl  = document.getElementById('description');
+const charCountEl    = document.getElementById('charCount');
+const dropZone       = document.getElementById('dropZone');
+const fileInput      = document.getElementById('fileInput');
+const fileList       = document.getElementById('fileList');
+
+let uploadedFiles = [];
+
+// ── Show/hide dynamic fields based on contact reason ──
+const transactionFields = document.getElementById('transactionFields');
+const hardwareFaultFields = document.getElementById('hardwareFaultFields');
+const caseIdGroup = document.getElementById('caseIdGroup');
+const serialPtidGroup = document.getElementById('serialPtidGroup');
+const ecommerceFields = document.getElementById('ecommerceFields');
+
+departmentEl.addEventListener('change', () => {
+  const val = departmentEl.value;
+  const isTx = val === 'Transaction Query';
+  const isHw = val === 'Hardware Fault';
+  const isEcom = val === 'Ecommerce';
+
+  // Transaction Query fields
+  transactionFields.style.display = isTx ? 'block' : 'none';
+  if (!isTx) {
+    ['txAmount','txCard','txDate','txTime'].forEach(id => {
+      document.getElementById(id).value = '';
+      document.getElementById('fg-' + id).classList.remove('error');
+    });
+  }
+
+  // Hardware Fault fields
+  hardwareFaultFields.style.display = isHw ? 'block' : 'none';
+  if (!isHw) {
+    ['postcode','line1','line2','town','county','postcodeResult'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+      const fg = document.getElementById('fg-' + id);
+      if (fg) fg.classList.remove('error');
+    });
+    document.getElementById('addressSelectGroup').style.display = 'none';
+    document.getElementById('addressFieldsGroup').style.display = 'none';
+    document.getElementById('addressLookupError').style.display = 'none';
+    document.getElementById('addressList').innerHTML = '';
+    addresses = [];
+  }
+
+  // Ecommerce fields
+  ecommerceFields.style.display = isEcom ? 'block' : 'none';
+  if (!isEcom) {
+    ['endpointUrl','apiPost','apiResponse'].forEach(id => {
+      document.getElementById(id).value = '';
+      document.getElementById('fg-' + id).classList.remove('error');
+    });
+  }
+
+  // Hide Serial Number & PTID for Ecommerce
+  serialPtidGroup.style.display = isEcom ? 'none' : 'block';
+  if (isEcom) {
+    document.getElementById('serial').value = '';
+    document.getElementById('ptid').value = '';
+    document.getElementById('fg-serial').classList.remove('error');
+  }
+
+  // Hide Existing Case ID for Hardware Fault
+  caseIdGroup.style.display = isHw ? 'none' : 'block';
+  if (isHw) document.getElementById('caseId').value = '';
+
+  // Update description placeholder
+  descriptionEl.placeholder = isEcom
+    ? 'Please describe your issue in detail...'
+    : 'Please describe your issue in detail. Include any error messages displayed on the terminal or system...';
+});
+
+// ── Card last 4 digits — numbers only ──
+const txCardEl = document.getElementById('txCard');
+txCardEl.addEventListener('input', () => {
+  txCardEl.value = txCardEl.value.replace(/[^0-9]/g, '').slice(0, 4);
+});
+
+// ── Transaction amount — numbers and decimal only ──
+const txAmountEl = document.getElementById('txAmount');
+txAmountEl.addEventListener('input', () => {
+  txAmountEl.value = txAmountEl.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+});
+
+// ── Address lookup (getAddress.io) ──
+const getAddressApiKey = 'VC9mAQ-w00ilIga8ubWv1w53084';
+var addresses = [];
+
+async function findAddress() {
+  const postcode = document.getElementById('postcode').value.trim();
+  if (!postcode) return;
+
+  const btn = document.getElementById('lookupBtn');
+  const errorDiv = document.getElementById('addressLookupError');
+  const selectGroup = document.getElementById('addressSelectGroup');
+  const fieldsGroup = document.getElementById('addressFieldsGroup');
+
+  btn.textContent = 'Searching...';
+  btn.classList.add('searching');
+  errorDiv.style.display = 'none';
+  selectGroup.style.display = 'none';
+  fieldsGroup.style.display = 'none';
+
+  try {
+    const response = await fetch(
+      `https://api.getAddress.io/find/${encodeURIComponent(postcode)}?api-key=${getAddressApiKey}`
+    );
+    if (!response.ok) throw new Error('Lookup failed');
+    const data = await response.json();
+    addresses = data.addresses;
+
+    const dropdown = document.getElementById('addressList');
+    dropdown.innerHTML = '';
+    addresses.forEach((address, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.text = address;
+      dropdown.appendChild(option);
+    });
+    selectGroup.style.display = 'block';
+    fillAddress();
+  } catch (error) {
+    errorDiv.textContent = 'Address lookup unavailable. Please enter your address manually.';
+    errorDiv.style.display = 'block';
+    fieldsGroup.style.display = 'block';
+    document.getElementById('postcodeResult').value = postcode;
+  }
+
+  btn.classList.remove('searching');
+  btn.textContent = 'Find Address';
+}
+
+function fillAddress() {
+  const index = document.getElementById('addressList').value;
+  const address = addresses[index].split(',');
+  document.getElementById('addressFieldsGroup').style.display = 'block';
+  document.getElementById('line1').value = (address[0] || '').trim();
+  document.getElementById('line2').value = (address[1] || '').trim();
+  document.getElementById('town').value = (address[address.length - 2] || '').trim();
+  document.getElementById('county').value = '';
+  document.getElementById('postcodeResult').value = document.getElementById('postcode').value;
+}
+
+// ── Call Us toggle ──
+document.getElementById('callUsToggle').addEventListener('click', () => {
+  const info = document.getElementById('callUsInfo');
+  info.style.display = info.style.display === 'none' ? 'block' : 'none';
+});
+
+// ── Serial number auto-format (XXX-XXX-XXX) ──
+const serialEl = document.getElementById('serial');
+serialEl.addEventListener('input', (e) => {
+  let raw = serialEl.value.replace(/[^0-9]/g, '').slice(0, 9);
+  let formatted = '';
+  for (let i = 0; i < raw.length; i++) {
+    if (i === 3 || i === 6) formatted += '-';
+    formatted += raw[i];
+  }
+  serialEl.value = formatted;
+});
+
+// ── PTID digits only (8 chars) ──
+const ptidEl = document.getElementById('ptid');
+ptidEl.addEventListener('input', () => {
+  ptidEl.value = ptidEl.value.replace(/[^0-9]/g, '').slice(0, 8);
+});
+
+// ── Character count ──
+descriptionEl.addEventListener('input', () => {
+  const len = descriptionEl.value.length;
+  charCountEl.textContent = len.toLocaleString();
+  charCountEl.parentElement.classList.toggle('over', len > 10000);
+});
+
+// ── File upload ──
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZone.classList.remove('dragover');
+  addFiles(e.dataTransfer.files);
+});
+fileInput.addEventListener('change', () => addFiles(fileInput.files));
+
+function addFiles(files) {
+  [...files].forEach(f => {
+    if (f.size <= 10 * 1024 * 1024) uploadedFiles.push(f);
+  });
+  renderFiles();
+}
+
+function renderFiles() {
+  fileList.innerHTML = '';
+  uploadedFiles.forEach((f, i) => {
+    const div = document.createElement('div');
+    div.className = 'file-item';
+    const size = f.size < 1024 ? f.size + ' B'
+               : f.size < 1048576 ? (f.size / 1024).toFixed(1) + ' KB'
+               : (f.size / 1048576).toFixed(1) + ' MB';
+    div.innerHTML = `<span><span class="file-name">${f.name}</span><span class="file-size">${size}</span></span>
+      <button class="remove-file" data-i="${i}" type="button">&times;</button>`;
+    fileList.appendChild(div);
+  });
+  fileList.querySelectorAll('.remove-file').forEach(btn => {
+    btn.addEventListener('click', () => {
+      uploadedFiles.splice(parseInt(btn.dataset.i), 1);
+      renderFiles();
+    });
+  });
+}
+
+// ── Validation ──
+function validate() {
+  let valid = true;
+  const checks = [
+    { id: 'fg-department', el: departmentEl },
+    { id: 'fg-firstName',  el: document.getElementById('firstName') },
+    { id: 'fg-lastName',   el: document.getElementById('lastName') },
+    { id: 'fg-phone',      el: document.getElementById('phone') },
+    { id: 'fg-description', el: descriptionEl },
+  ];
+
+  // Email special check
+  const emailEl = document.getElementById('email');
+  const emailGroup = document.getElementById('fg-email');
+  const emailOk = emailEl.value.trim() && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim());
+  emailGroup.classList.toggle('error', !emailOk);
+  if (!emailOk) valid = false;
+
+  checks.forEach(({ id, el }) => {
+    const ok = el.value.trim() !== '';
+    document.getElementById(id).classList.toggle('error', !ok);
+    if (!ok) valid = false;
+  });
+
+  // Serial number format check (skip for Ecommerce)
+  if (serialPtidGroup.style.display !== 'none') {
+    const serialGroup = document.getElementById('fg-serial');
+    const serialOk = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/.test(serialEl.value.trim());
+    serialGroup.classList.toggle('error', !serialOk);
+    if (!serialOk) valid = false;
+  }
+
+  // Transaction fields (only when visible)
+  if (transactionFields.style.display !== 'none') {
+    const txChecks = [
+      { id: 'fg-txAmount', el: document.getElementById('txAmount') },
+      { id: 'fg-txDate',   el: document.getElementById('txDate') },
+      { id: 'fg-txTime',   el: document.getElementById('txTime') },
+    ];
+    txChecks.forEach(({ id, el }) => {
+      const ok = el.value.trim() !== '';
+      document.getElementById(id).classList.toggle('error', !ok);
+      if (!ok) valid = false;
+    });
+    const cardOk = /^[0-9]{4}$/.test(txCardEl.value.trim());
+    document.getElementById('fg-txCard').classList.toggle('error', !cardOk);
+    if (!cardOk) valid = false;
+  }
+
+  // Hardware Fault fields (only when visible)
+  if (hardwareFaultFields.style.display !== 'none') {
+    ['postcode','line1','town'].forEach(id => {
+      const el = document.getElementById(id);
+      const ok = el.value.trim() !== '';
+      const fg = document.getElementById('fg-' + id);
+      if (fg) fg.classList.toggle('error', !ok);
+      if (!ok) valid = false;
+    });
+  }
+
+  // Ecommerce fields (only when visible)
+  if (ecommerceFields.style.display !== 'none') {
+    ['endpointUrl','apiPost','apiResponse'].forEach(id => {
+      const el = document.getElementById(id);
+      const ok = el.value.trim() !== '';
+      document.getElementById('fg-' + id).classList.toggle('error', !ok);
+      if (!ok) valid = false;
+    });
+  }
+
+  return valid;
+}
+
+// ── Submit ──
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  if (!validate()) return;
+
+  // Build mailto body
+  const data = {
+    'Contact Reason':  departmentEl.value,
+    'First Name':     document.getElementById('firstName').value.trim(),
+    'Last Name':      document.getElementById('lastName').value.trim(),
+    'Phone':          document.getElementById('phone').value.trim(),
+    'Email':          document.getElementById('email').value.trim(),
+  };
+  if (departmentEl.value !== 'Ecommerce') {
+    data['Serial Number'] = document.getElementById('serial').value.trim();
+    data['PTID'] = document.getElementById('ptid').value.trim() || 'N/A';
+  }
+  if (departmentEl.value !== 'Hardware Fault') {
+    data['Existing Case ID'] = document.getElementById('caseId').value.trim() || 'N/A';
+  }
+  if (departmentEl.value === 'Hardware Fault') {
+    const addr = [
+      document.getElementById('line1').value.trim(),
+      document.getElementById('line2').value.trim(),
+      document.getElementById('town').value.trim(),
+      document.getElementById('county').value.trim(),
+      document.getElementById('postcodeResult').value.trim()
+    ].filter(Boolean).join(', ');
+    data['Delivery Address'] = addr;
+  }
+  if (departmentEl.value === 'Transaction Query') {
+    data['Transaction Amount'] = document.getElementById('txAmount').value.trim();
+    data['Transaction Date']   = document.getElementById('txDate').value;
+    data['Transaction Time']   = document.getElementById('txTime').value;
+    data['Last 4 Card Digits'] = document.getElementById('txCard').value.trim();
+  }
+  if (departmentEl.value === 'Ecommerce') {
+    data['Endpoint URL']  = document.getElementById('endpointUrl').value.trim();
+    data['API Post']      = document.getElementById('apiPost').value.trim();
+    data['API Response']  = document.getElementById('apiResponse').value.trim();
+  }
+  data['Description'] = descriptionEl.value.trim();
+  if (uploadedFiles.length) {
+    data['Attachments'] = uploadedFiles.map(f => f.name).join(', ') + ' (attached separately)';
+  }
+
+  const subject = `[${data['Contact Reason']}] Support Request from ${data['First Name']} ${data['Last Name']}`;
+  const body = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\n\n');
+
+  // Open mailto
+  const mailto = `mailto:uk.helpdesk@verifone.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+
+  // Show success
+  submitBtn.classList.add('loading');
+  setTimeout(() => {
+    form.style.display = 'none';
+    successMsg.classList.add('show');
+    submitBtn.classList.remove('loading');
+  }, 800);
+});
+
+// ── Reset ──
+resetBtn.addEventListener('click', () => {
+  form.reset();
+  charCountEl.textContent = '0';
+  uploadedFiles = [];
+  fileList.innerHTML = '';
+  document.querySelectorAll('.field-group.error').forEach(g => g.classList.remove('error'));
+});
+</script>
+</body>
+</html>
